@@ -9,7 +9,7 @@
 .cimek h3{
     margin: 0 50px;
 }
-.cim {
+header {
     background-image: url("https://images.pexels.com/photos/1032110/pexels-photo-1032110.jpeg?auto=compress&cs=tinysrgb&w=600");
         background-position: center;
         background-repeat: no-repeat; 
@@ -20,6 +20,9 @@
         align-items: center; 
         color: white;
         text-align: center;
+        font-size: 100px;
+        background-attachment: fixed;
+        white-space: nowrap;
       
 }
 body, html {
@@ -27,4 +30,9 @@ body, html {
     padding: 0;
     height: 100%;
   }
-  
+  body {
+    font-family: "Roboto", sans-serif;
+  }
+  header h2{
+    font-size: 70px;
+  }  
