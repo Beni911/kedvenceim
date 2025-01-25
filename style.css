@@ -1,11 +1,4 @@
-.cimek {
-  display: flex;
-  justify-content: center;
-  padding: 0;
-  margin-top: 10px;
 
-
-}
 
 footer {
   max-width: 1200px;
@@ -13,11 +6,9 @@ footer {
   padding: 20px;
 }
 
-.cimek h3 {
-  margin: 0 50px;
-}
 
-header {
+
+header{
   background-image: url("https://images.pexels.com/photos/1032110/pexels-photo-1032110.jpeg?auto=compress&cs=tinysrgb&w=600");
   background-position: center;
   background-repeat: no-repeat;
@@ -53,4 +44,80 @@ header h2 {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+}
+
+.cimek {
+  height: 50px;
+  width: 50px;
+  position: relative;
+}
+.cimek span {
+  height: 5px;
+  width: 100%;
+  background-color: #6F86FF;
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: .3s ease;
+
+}
+.cimek span:nth-child(1) {
+  top: 25%;
+
+}
+.cimek span:nth-child(3) {
+  top: 75%;
+}
+.cimek.active span:nth-child(1) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.cimek.active span:nth-child(2) {
+  opacity: 0;
+}
+.cimek.active span:nth-child(3) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.off-screen-menu {
+  background-color: rgb(34, 37, 49);
+  height: 100vh;
+  width: 100%;
+  max-width: 450px;
+  position: fixed;
+  top: 0;
+  right: -450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  font-size: 3rem;
+  transition: .3s ease;
+}
+.off-screen-menu.active {
+  right: 0;
+}
+nav{
+  padding: 1rem;
+  background-color: rgb(34, 37, 49);
+  height: 1%;
+  display: flex;
+  align-items: center;
+
+}
+.cimek {
+  height: 50px;
+  width: 50px;
+  margin-left: auto;
+  position: relative;
+}
+ul{
+  list-style: none;
+
+}
+li a {
+  text-decoration: none;
 }
