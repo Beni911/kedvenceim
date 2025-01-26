@@ -212,4 +212,9 @@ footer h4 {
     padding: 10px;
     font-size: 14px;
   }
-}
+ } 
+ a {
+    text-decoration: none;
+    color: red;
+    font-weight: 600;
+  }
