@@ -1,7 +1,9 @@
-footer {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  height: 100%;
 }
 
 header {
@@ -15,25 +17,14 @@ header {
   align-items: center;
   color: white;
   text-align: center;
-  font-size: 100px;
-  background-attachment: fixed;
-  white-space: nowrap;
-
 }
 
-body,
-html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
+header h1 {
+  font-size: 170px;
 }
 
 header h2 {
-  font-size: 70px;
+  font-size: 60px;
 }
 
 .container {
@@ -42,46 +33,33 @@ header h2 {
   padding: 20px;
 }
 
-.cimek {
-  height: 50px;
-  width: 50px;
-  position: relative;
+.ujdonsagok h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
-.cimek span {
-  height: 5px;
-  width: 100%;
-  background-color: #6F86FF;
-  border-radius: 25px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: .3s ease;
-
+.ujdonsagok p {
+  font-size: 18px;
+  margin-bottom: 20px;
 }
 
-.cimek span:nth-child(1) {
-  top: 25%;
-
+.ujdonsagok ul {
+  list-style: none;
+  padding: 0;
 }
 
-.cimek span:nth-child(3) {
-  top: 75%;
+.ujdonsagok ul li {
+  margin-bottom: 10px;
 }
 
-.cimek.active span:nth-child(1) {
-  top: 50%;
-  transform: translate(-50%, -50%) rotate(45deg);
+.ujdonsagok ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.cimek.active span:nth-child(2) {
-  opacity: 0;
-}
-
-.cimek.active span:nth-child(3) {
-  top: 50%;
-  transform: translate(-50%, -50%) rotate(-45deg);
+.ujdonsagok ul li a:hover {
+  color: #6F86FF;
 }
 
 .off-screen-menu {
@@ -108,40 +86,64 @@ header h2 {
 nav {
   padding: 1rem;
   background-color: rgb(34, 37, 49);
-  height: 1%;
   display: flex;
   align-items: center;
-
 }
 
-.cimek {
+nav .cimek {
   height: 50px;
   width: 50px;
   margin-left: auto;
   position: relative;
 }
 
-ul {
+nav .cimek span {
+  height: 5px;
+  width: 100%;
+  background-color: #6F86FF;
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: .3s ease;
+}
+
+nav .cimek span:nth-child(1) {
+  top: 25%;
+}
+
+nav .cimek span:nth-child(3) {
+  top: 75%;
+}
+
+nav .cimek.active span:nth-child(1) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+nav .cimek.active span:nth-child(2) {
+  opacity: 0;
+}
+
+nav .cimek.active span:nth-child(3) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.off-screen-menu ul {
   list-style: none;
-
 }
 
-li a {
-  text-decoration: none;
-
-}
-
-li a:hover {
-  color: #6F86FF;
-}
-
-li a:visited {
+.off-screen-menu li a {
   color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 1rem;
 }
 
-
-header h2 {
-  font-size: 70px;
+.off-screen-menu li a:hover {
+  color: #6F86FF;
 }
 
 
@@ -151,6 +153,7 @@ table.info-table {
   margin: 0 auto;
   background-color: white;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
 
 table.info-table th,
@@ -173,22 +176,34 @@ table.info-table tr:hover {
   background-color: #f1f1f1;
 }
 
+
 footer {
+  max-width: 1200px;
+  margin: 0 auto;
   background-color: #363636;
   color: white;
   padding: 20px;
   text-align: center;
+  border-radius: 20px;
 }
 
 footer h2 {
   font-size: 22px;
-  margin: 0;
 }
 
 footer h4 {
   font-size: 16px;
-  margin: 5px 0;
 }
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #6F86FF;
+}
+
 
 @media (max-width: 768px) {
   header h1 {
@@ -203,18 +218,17 @@ footer h4 {
     padding: 30px 10px;
   }
 
-  .container h2 {
-    font-size: 24px;
-  }
-
   table.info-table th,
   table.info-table td {
     padding: 10px;
     font-size: 14px;
   }
- } 
- a {
-    text-decoration: none;
-    color: red;
-    font-weight: 600;
+
+  footer h2 {
+    font-size: 18px;
   }
+
+  footer h4 {
+    font-size: 14px;
+  }
+}
