@@ -198,6 +198,23 @@ footer {
   border-radius: 20px;
 }
 
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.social-icon img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.social-icon img:hover {
+  transform: scale(1.1)
+}
+
 footer h2 {
   font-size: 22px;
 }
@@ -242,4 +259,269 @@ footer a:hover {
   footer h4 {
     font-size: 14px;
   }
+}
+
+
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.left-content {
+  flex: 1;
+}
+
+footer {
+  background-color: #232e21;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 20px;
+  margin-top: 40px;
+}
+
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.left-content,
+.right-content {
+  flex: 1;
+  margin: 10px;
+  min-width: 280px;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #6F86FF;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.social-icon img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.social-icon img:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  footer {
+    padding: 20px;
+  }
+
+  .about-section {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .left-content,
+  .right-content {
+    flex: 1 1 100%;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 14px;
+  }
+}
+
+table.info-table {
+  width: 80%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: white;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+table.info-table th,
+table.info-table td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+table.info-table th {
+  background-color: #6F86FF;
+  color: white;
+}
+
+table.info-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table.info-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.left-content,
+.right-content {
+  flex: 1;
+  margin: 10px;
+  min-width: 280px;
+}
+
+h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #232e21;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 20px;
+  margin-top: 40px;
+}
+
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.left-content,
+.right-content {
+  flex: 1;
+  margin: 10px;
+  min-width: 280px;
+  text-align: left;
+}
+
+.center-content {
+  flex: 2;
+  margin: 10px;
+  text-align: center;
+}
+
+h2,
+h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #6F86FF;
+}
+
+table.info-table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+table.info-table th,
+table.info-table td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+table.info-table th {
+  background-color: #6F86FF;
+  color: white;
+}
+
+table.info-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table.info-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+
+@media (max-width: 768px) {
+  footer {
+    padding: 20px;
+  }
+
+  .about-section {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .left-content,
+  .right-content {
+    flex: 1 1 100%;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  table.info-table {
+    width: 100%;
+  }
+}
+
+td {
+  color: black;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.nyitva {
+  padding-bottom: 110px;
+  font-size: 2em;
 }
