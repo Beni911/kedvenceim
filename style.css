@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 body,
 html {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Playfair Display", serif;
   height: 100%;
+  background-color: #D7B8F3;
 }
 
 header {
@@ -31,6 +34,10 @@ header h2 {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  background-color: #B8B8F3;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .ujdonsagok h2 {
@@ -63,13 +70,13 @@ header h2 {
 }
 
 .off-screen-menu {
-  background-color: rgb(34, 37, 49);
+  background-color: #232e21;
   height: 100vh;
   width: 100%;
-  max-width: 450px;
+  max-width: 350px;
   position: fixed;
   top: 0;
-  right: -450px;
+  right: -350px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -85,9 +92,13 @@ header h2 {
 
 nav {
   padding: 1rem;
-  background-color: rgb(34, 37, 49);
+  background-color: #232e21;
   display: flex;
   align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  border-radius: 35px;
 }
 
 nav .cimek {
@@ -180,7 +191,7 @@ table.info-table tr:hover {
 footer {
   max-width: 1200px;
   margin: 0 auto;
-  background-color: #363636;
+  background-color: #232e21;
   color: white;
   padding: 20px;
   text-align: center;
