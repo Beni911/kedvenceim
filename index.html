@@ -78,56 +78,7 @@
                 <h2>Rólunk</h2>
                 <p>Mi vagyunk a legjobb csapat, akik mindig a legjobb megoldásokat keresik az ügyfelek számára.</p>
                 <p>Cím: 1234 Budapest, Fő utca 12.</p>
-                <div id="map"></div>
-            </div>
-            <div class="center-content">
-                <h3 class="nyitva">Nyitvatartás</h3>
-                <table class="info-table">
-                    <thead>
-                        <tr>
-                            <th>Nap</th>
-                            <th>Nyitás</th>
-                            <th>Zárás</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Hétfő</td>
-                            <td>9:00</td>
-                            <td>18:00</td>
-                        </tr>
-                        <tr>
-                            <td>Kedd</td>
-                            <td>9:00</td>
-                            <td>18:00</td>
-                        </tr>
-                        <tr>
-                            <td>Szerda</td>
-                            <td>9:00</td>
-                            <td>18:00</td>
-                        </tr>
-                        <tr>
-                            <td>Csütörtök</td>
-                            <td>9:00</td>
-                            <td>18:00</td>
-                        </tr>
-                        <tr>
-                            <td>Péntek</td>
-                            <td>9:00</td>
-                            <td>18:00</td>
-                        </tr>
-                        <tr>
-                            <td>Szombat</td>
-                            <td>10:00</td>
-                            <td>14:00</td>
-                        </tr>
-                        <tr>
-                            <td>Vasárnap</td>
-                            <td>Zárva</td>
-                            <td>-</td>
-                        </tr>
-                    </tbody>
-                </table>
+                
             </div>
             <div class="right-content">
                 <h2 id="kapcsolat">Kapcsolat</h2>
@@ -145,23 +96,11 @@
                     alt="Facebook" />
             </a>
         </div>
+        <div class="copy">
+            <p>&copy; 2025 BeniKicks. Minden jog fenntartva.</p>
+        </div>
     </footer>
     <script src="java.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOVYRIgupAurZup5y1PRh8Ismb1A3lLao&callback=initMap"
-        async defer></script>
-    <script>
-        function initMap() {
-            var location = { lat: 47.4979, lng: 19.0402 };
-            var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 15,
-                center: location
-            });
-            var marker = new google.maps.Marker({
-                position: location,
-                map: map
-            });
-        }
-    </script>
 </body>
 
 </html>
