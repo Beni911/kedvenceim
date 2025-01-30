@@ -198,6 +198,7 @@ footer {
   border-radius: 20px;
 }
 
+<<<<<<< HEAD
 .social-links {
   display: flex;
   justify-content: center;
@@ -215,6 +216,26 @@ footer {
   transform: scale(1.1);
 }
 
+=======
+footer h2 {
+  font-size: 22px;
+}
+
+footer h4 {
+  font-size: 16px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #6F86FF;
+}
+
+
+>>>>>>> parent of 00fff88 (map_added)
 @media (max-width: 768px) {
   header h1 {
     font-size: 28px;
@@ -241,6 +262,7 @@ footer {
   footer h4 {
     font-size: 14px;
   }
+<<<<<<< HEAD
 }
 
 #map {
@@ -248,4 +270,5 @@ footer {
   width: 100%;
   border-radius: 10px;
   margin-top: 20px;
+=======
 }
