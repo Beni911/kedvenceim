@@ -71,6 +71,8 @@
         </div>
     </div>
     <footer>
+        <div id="kapcsolat">
+            
         <section class="about-section">
             <div class="left-content">
                 <h2>Rólunk</h2>
@@ -123,7 +125,6 @@
                             <td>Vasárnap</td>
                             <td>Zárva</td>
                             <td>-</td>
-                            
                         </tr>
                     </tbody>
                 </table>
@@ -143,20 +144,24 @@
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/120px-Facebook_f_logo_%282019%29.svg.png"
                     alt="Facebook" />
             </a>
-=======
-=======
->>>>>>> parent of 00fff88 (map_added)
-        <div id="kapcsolat">
-            <h2>Kapcsolat</h2>
-            <h4>Telefonszám: 06 30 123 4567</h4>
-            <h4>Email: <a href="mailto:benikicks@gmail.com">benikicks@gmail.com</a></h4>
-<<<<<<< HEAD
->>>>>>> parent of 00fff88 (map_added)
-=======
->>>>>>> parent of 00fff88 (map_added)
         </div>
     </footer>
     <script src="java.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOVYRIgupAurZup5y1PRh8Ismb1A3lLao&callback=initMap"
+        async defer></script>
+    <script>
+        function initMap() {
+            var location = { lat: 47.4979, lng: 19.0402 };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: location
+            });
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map
+            });
+        }
+    </script>
 </body>
 
 </html>
